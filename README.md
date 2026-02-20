@@ -3,25 +3,25 @@
 ```js
 const name = 'Guilherme Fernandes';
 
-const age = 32;
+const age = 33;
 
-const degree = ['Web developer Jr.', 'Technologist in financial management', 'Data Analyst'];
+const degree = ['Web developer Jr.', 'Technologist in financial management', 'Business intelligence analyst'];
 
 const status = { 
   educationalInstitutions: ['Trybe', 'IFMG - Formiga'],
   work: {
-    company: 'Prodoeste',
+    company: 'CAIXA',
     office: 'Business Intelligence Analyst',
   },
-  interests: ['Web applications', 'Finance', 'Economy', 'Web3', 'Investments'],
+  interests: ['Web applications', 'Finance', 'Economy', 'Web3', 'Investments', 'Power BI'],
 };
 
 const skills = 
 {
-  languages :['Javascript', 'Java', 'TypeScript', 'Python', 'SQL', 'Solidity', 'VBA Excel', 'Java'],
+  languages :['Javascript', 'Java', 'TypeScript', 'Python', 'SQL', 'Solidity', 'VBA Excel', 'Java', 'DAX', 'M', 'Power Fx'],
   design: ['CSS', 'Corel Draw', 'Figma', 'Tailwind', 'Styled Components', 'Bootstrap', 'Canva'],
-  frameworks:['React', 'Redux', 'Node.js', 'Spring Boot', 'PostgreSQL', 'MySQL', 'Jest', 'RTL', 'Vitest', 'NextJs', 'Spring Boot'],
-  platforms :['Linux', 'Git', 'VS Code', 'Microsoft Office'],
+  frameworks:['Angular', 'React', 'Redux', 'Node.js', 'Spring Boot', 'PostgreSQL', 'MySQL', 'Jest', 'RTL', 'Vitest', 'NextJs', 'Spring Boot'],
+  platforms :['Linux', 'Git', 'VS Code', 'Microsoft Office', 'Power BI', 'Power Automate', 'Power App', 'GPT Maker'],
 }
 
 ```
@@ -30,8 +30,8 @@ const skills =
 
 <!-- GITHUB STATUS -->
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=GuiiFernandes&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GuiiFernandes&layout=compact&langs_count=10&theme=dark"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=guifernandes-dev&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=guifernandes-dev&layout=compact&langs_count=10&theme=dark"/>
 
   <!-- TEMAS: dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula -->
 </div>
