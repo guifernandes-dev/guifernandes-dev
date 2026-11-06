@@ -1,11 +1,16 @@
 ## Boas vindas ao meu perfil 😀
 
+<!-- PROFILE-CODE-START -->
 ```js
 const name = 'Guilherme Fernandes';
 
-const age = <!-- AGE -->34<!-- AGE -->;
+const age = 34;
 
-const degree = ['Web developer Jr.', 'Technologist in financial management', 'Business intelligence analyst'];
+const degree = [
+  'Web developer Jr.',
+  'Technologist in financial management',
+  'Business intelligence analyst'
+];
 
 const status = { 
   educationalInstitutions: ['Trybe', 'IFMG - Formiga'],
@@ -16,15 +21,14 @@ const status = {
   interests: ['Web applications', 'Finance', 'Economy', 'Web3', 'Investments', 'Power BI'],
 };
 
-const skills = 
-{
-  languages :['TypeScript', 'Python', 'SQL', 'Solidity', 'VBA Excel', 'Java', 'DAX', 'M', 'Power Fx', 'Java'],
+const skills = {
+  languages: ['TypeScript', 'Python', 'SQL', 'Solidity', 'VBA Excel', 'Java', 'DAX', 'M', 'Power Fx'],
   design: ['CSS', 'Corel Draw', 'Figma', 'Tailwind', 'Styled Components', 'Bootstrap', 'Canva'],
-  frameworks:['Angular', 'React', 'Redux', 'Node.js', 'Spring Boot', 'PostgreSQL', 'MySQL', 'Jest', 'RTL', 'Vitest', 'NextJs', 'Spring Boot'],
-  platforms :['PowerCenter', 'Linux', 'Git', 'VS Code', 'Microsoft Office', 'Power BI', 'Power Automate', 'Power App', 'GPT Maker'],
-}
-
+  frameworks: ['Angular', 'React', 'Redux', 'Node.js', 'Spring Boot', 'PostgreSQL', 'MySQL', 'Jest', 'RTL', 'Vitest', 'NextJs'],
+  platforms: ['PowerCenter', 'Linux', 'Git', 'VS Code', 'Microsoft Office', 'Power BI', 'Power Automate', 'Power App', 'GPT Maker'],
+};
 ```
+<!-- PROFILE-CODE-END -->
 
 <!-- <br> -->
 
