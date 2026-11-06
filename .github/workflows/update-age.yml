@@ -1,8 +1,6 @@
 name: Atualizar idade
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   schedule:
     - cron: "0 3 * * *"
 
@@ -37,7 +35,6 @@ jobs:
 
           sed -i "s/<!-- AGE -->[0-9]*<!-- AGE -->/<!-- AGE -->${IDADE}<!-- AGE -->/" README.md
 
-      # Runs a set of commands using the runners shell
       - name: Atualizar README
         run: |
           git config user.name "github-actions[bot]"
