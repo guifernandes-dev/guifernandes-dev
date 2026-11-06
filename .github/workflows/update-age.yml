@@ -33,7 +33,7 @@ jobs:
             IDADE=$((IDADE - 1))
           fi
 
-          sed -i "s/<!-- AGE -->[0-9]*<!-- AGE -->/<!-- AGE -->${IDADE}<!-- AGE -->/" README.md
+          sed -i "/<!-- PROFILE-CODE-START -->/,/<!-- PROFILE-CODE-END -->/s/const age = [0-9]*;/const age = ${IDADE};/" README.md
 
       - name: Atualizar README
         run: |
