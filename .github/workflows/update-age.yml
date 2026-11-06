@@ -1,0 +1,53 @@
+name: Atualizar idade
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  schedule:
+    - cron: "0 3 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-age:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Calcular idade
+        run: |
+          NASCIMENTO="1992-07-07"
+          HOJE=$(date +%Y-%m-%d)
+
+          ANO_ATUAL=$(date +%Y)
+          ANO_NASCIMENTO=${NASCIMENTO:0:4}
+
+          IDADE=$((ANO_ATUAL - ANO_NASCIMENTO))
+
+          ANIVERSARIO="${ANO_ATUAL}-${NASCIMENTO:5:5}"
+
+          if [[ "$HOJE" < "$ANIVERSARIO" ]]; then
+            IDADE=$((IDADE - 1))
+          fi
+
+          sed -i "s/<!-- AGE -->[0-9]*<!-- AGE -->/<!-- AGE -->${IDADE}<!-- AGE -->/" README.md
+
+      # Runs a set of commands using the runners shell
+      - name: Atualizar README
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet README.md; then
+            echo "Idade já está atualizada."
+            exit 0
+          fi
+
+          git add README.md
+          git commit -m "Atualiza idade no perfil"
+          git push
