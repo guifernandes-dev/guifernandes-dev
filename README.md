@@ -3,7 +3,7 @@
 ```js
 const name = 'Guilherme Fernandes';
 
-const age = 33;
+const age = <!-- AGE -->34<!-- AGE -->;
 
 const degree = ['Web developer Jr.', 'Technologist in financial management', 'Business intelligence analyst'];
 
@@ -26,15 +26,15 @@ const skills =
 
 ```
 
-<br>
+<!-- <br> -->
 
 <!-- GITHUB STATUS -->
-<div align="center">
+<!-- <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=guifernandes-dev&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=guifernandes-dev&layout=compact&langs_count=10&theme=dark"/>
 
   <!-- TEMAS: dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula -->
-</div>
+<!-- </div> -->
 
 <br>
 
